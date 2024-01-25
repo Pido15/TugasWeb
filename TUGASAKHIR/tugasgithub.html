@@ -1,0 +1,118 @@
+<html>
+<title>TUGAS AKHIR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<head>
+<div class="w3-container w3-black Menus">
+    <img src="thebeatles.jpg" height="80%" width="100%">
+</div>
+</head>
+
+<body>
+</div>
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button" onclick="openKota('ABOUT ME')">ABOUT ME</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('HOME')">HOME</button>
+    <button class="w3-bar-item w3-button" onclick="openKota('TENTANG')">TENTANG</button>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">PERSONIL</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <button class="w3-bar-item w3-button" onclick="openKota('PAUL MCCARTNEY')">PAUL MCCARTNEY</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('JOHN LENNON')">JOHN LENNON</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('GEORGE HARRISON')">GEORGE HARRISON</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('RINGO STARR')">RINGO STARR</button>
+        </div>
+</div>
+    
+<div id="ABOUT ME" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="dadad.jpg" width="25%" length="25%">
+        <h3>
+            Raffi Rafsanzani <br>
+            10123046 <br>
+            IF 2 
+            
+        </h3>
+    </p>
+</div>    
+
+
+<div id="HOME" class="w3-container kota w3-animate-zoom" style="display: none">
+    <p>
+    <center>
+        <h3>Welcome To Pido's Website</h3>
+        <br>
+        <img  src="beatles.jpg">
+        <br><br>
+        do u know The Beatles?
+    </center>
+    </p>
+</div>
+
+<div id="TENTANG" class="w3-container w3-black kota" style="display:none">
+    <p class="w3-text-white">   
+        The Beatles adalah kelompok pemusik Inggris beraliran rock, dibentuk di Liverpool pada tahun 1960, sering kali dianggap sebagai pemusik tersukses secara komersial dan paling banyak mendapat pujian dalam musik populer. Sejak tahun 1962, kelompok ini terdiri dari John Lennon (gitar pengiring, vokal), Paul McCartney (gitar bass, vokal), George Harrison (gitar melodi, vokal), Ringo Starr (drum, vokal). Bermula dari aliran skiffle dan rock and roll 1950-an, kelompok ini nantinya memainkan musik dalam berbagai genre mulai dari folk rock sampai rock psikedelik, memasukkan juga unsur musik klasik dan elemen lain dengan cara inovatif. The Beatles dipandang sebagai perwujudan ide-ide progresif, berpengaruh terhadap revolusi sosial budaya pada dekade 60-an.
+    </p>
+</div>
+
+<div id="PAUL MCCARTNEY" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="paul.jpg" width="30%" legnth="30%">
+        <br><br>
+        James Paul McCartney <br>
+        18 Juni 1942 <br>
+        Liverpool, Inggris
+    </p>
+</div>
+
+<div id="JOHN LENNON" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="john.jpg" width="30%" legnth="30%">
+        <br><br>
+        John Winston Ono Lennon <br>
+        9 Oktober 1940 <br>
+        Liverpool, Inggris
+    </p>
+</div>
+
+<div id="GEORGE HARRISON" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="george.jpg" width="30%" legnth="30%">
+        <br><br>
+        George Harrison MBE <br>
+        25 Februari 1943 <br>
+        Liverpool, Inggris
+    </p>
+</div>
+
+<div id="RINGO STARR" class="w3-container kota" style="display: none">
+    <p>
+        <center>
+        <img src="ringo.jpg" width="30%" legnth="30%">
+        <br><br>
+        Sir Richard Starkey MBE <br>
+        7 Juli 1940 <br>
+        Liverpool, Inggris
+    </p>
+</div>
+
+
+    
+
+<script>
+    function openKota(namakota) {
+        var i;
+        var x = document.getElementsByClassName('kota');
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = 'none';
+        }
+    document.getElementById(namakota).style.display = 'block';
+}
+</script>
+</body>
+</html>
